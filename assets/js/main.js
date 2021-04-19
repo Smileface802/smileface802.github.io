@@ -51,7 +51,12 @@
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
-  })
+  });
+
+  on('click', '#header h2 > a', function (e) {
+    select('#navbar .nav-link', true).filter(value => value.hash === '#about')[0].click();
+  });
+
 
   /**
    * Scrool with ofset on links with a class name .scrollto
@@ -268,7 +273,6 @@
       document.documentElement.style.setProperty('--lightwhite', 'rgba(255, 255, 255, 0.08)');
       document.documentElement.style.setProperty('--panels', '#444444');
     }
-  })
-  // Theme
+  });
 
 })()
