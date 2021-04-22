@@ -58,6 +58,34 @@
   });
 
 
+	// let scrollY = window.pageYOffset;
+  // $(window).scroll(function (e) {
+  //   if ($(window).scrollTop() === $(document).height() - $(window).height()) {
+  //     let header = $('#header');
+  //     if (!header.hasClass('header-top')) {
+  //       header.addClass('header-top');
+  //       $('#navbar .nav-link[href="#about"]')[0].click();
+  //     }
+  //     else {
+  //       let sections = $('section');
+  //       var currentIndex = $('section.section-show').data().index;
+  //       var nextSection = sections.toArray().find(section => $(section).data().index === currentIndex + 1);
+  //       if (nextSection != undefined) {
+  //         $(`#navbar .nav-link[href="#${nextSection.id}"]`)[0].click();
+  //       }
+  //     }
+  //   }
+  //   else if ($(window).scrollTop() < 0){
+  //     let sections = $('section');
+  //     var currentIndex = $('section.section-show').data().index;
+  //     var nextSection = sections.toArray().find(section => $(section).data().index === currentIndex - 1);
+  //     if (nextSection != undefined) {
+  //       $(`#navbar .nav-link[href="#${nextSection.id}"]`)[0].click();
+  //     }
+  //   }
+  // });
+
+
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
@@ -256,6 +284,8 @@
     select('body').classList.toggle('whiteTheme');
     select('body').classList.toggle('blackTheme');
     if(this.checked){
+      select("#lnkDownloadResume").href = "assets/pdf/Jose Franco Olea Vallejo_white.pdf"
+      select("#lnkDownloadResumeSection").href = "assets/pdf/Jose Franco Olea Vallejo_white.pdf"
       document.documentElement.style.setProperty('--primarybirght', '#0a6ceb');
       document.documentElement.style.setProperty('--primarylight', '#0a6ceb');
       document.documentElement.style.setProperty('--white', '#1a1a1a');
@@ -265,6 +295,8 @@
       document.documentElement.style.setProperty('--panels', '#0a6ceb');
     }
     else{
+      select("#lnkDownloadResume").href = "assets/pdf/Jose Franco Olea Vallejo_dark.pdf"
+      select("#lnkDownloadResumeSection").href = "assets/pdf/Jose Franco Olea Vallejo_dark.pdf"
       document.documentElement.style.setProperty('--primarybirght', '#47aeff');
       document.documentElement.style.setProperty('--primarylight', '#47aeff');
       document.documentElement.style.setProperty('--white', '#ffffff');

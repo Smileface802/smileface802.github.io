@@ -432,6 +432,20 @@ section .container {
   color: var(--white);
 }
 
+.section-title p a {
+  font-size: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--lightwhite);
+  color: var(--white);
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
