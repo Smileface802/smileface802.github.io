@@ -1,0 +1,8 @@
+https://www.sejda.com/es/html-to-pdf
+
+1. Comment/Uncomment :root section for White/Dark theme
+2. Change body class from/to whiteTheme/blackTheme
+3. Use https://www.sejda.com/es/html-to-pdf to convert it from HTML to PDF
+
+Note: Images sources must URLs
+Note2: Icons like phone or email must be emojis
